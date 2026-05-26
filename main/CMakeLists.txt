@@ -1,0 +1,37 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "app_ui.c"
+        "app_settings.c"
+        "wifi_manager.c"
+        "audio_ws.c"
+        "event_parser.c"
+        "station_parser.c"
+        "ui_icons.c"
+        "ui_async.c"
+        "fonts/font20.c"
+        "fonts/EN_BIG.c"
+        "fonts/status_font.c"
+        "fonts/font28.c"
+        "fonts/clock_font.c"
+        "battery_monitor.c"
+        "audio_output.c"
+        "bt_audio.c"
+        "app_power_save.c"
+    INCLUDE_DIRS
+        "."
+        "fonts"
+    REQUIRES
+        driver
+        esp_timer
+        nvs_flash
+        esp_netif
+        esp_wifi
+        esp_event
+        esp_adc
+        esp_driver_i2s
+        json
+        lvgl
+        lv_porting
+        lvgl_esp32_drivers
+)

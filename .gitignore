@@ -1,0 +1,75 @@
+# ---------------------------------------------------------------------------
+# ESP-IDF build output
+# ---------------------------------------------------------------------------
+sdkconfig
+sdkconfig.old
+.devcontainer/
+build/
+sdkconfig.old
+
+# If you prefer not to commit local sdkconfig, keep this enabled.
+# Recommended: commit sdkconfig.defaults instead.
+
+# Firmware / generated binaries
+*.bin
+*.elf
+*.map
+*.hex
+
+# ESP-IDF generated flash args
+flash_args
+flasher_args.json
+bootloader-flash_args
+partition-table-flash_args
+
+# ---------------------------------------------------------------------------
+# ESP-IDF Component Manager
+# ---------------------------------------------------------------------------
+
+managed_components/
+
+# Keep dependencies.lock if you want reproducible builds.
+# Do NOT ignore dependencies.lock by default.
+# dependencies.lock
+
+# ---------------------------------------------------------------------------
+# Local private configuration
+# ---------------------------------------------------------------------------
+
+main/app_private_config.h
+private_config.h
+secrets.h
+wifi_secrets.h
+
+# ---------------------------------------------------------------------------
+# Editor / IDE files
+# ---------------------------------------------------------------------------
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------------------------------------------------------------------------
+# OS files
+# ---------------------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Python cache / test cache
+# ---------------------------------------------------------------------------
+
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ---------------------------------------------------------------------------
+# Temporary / backup files
+# ---------------------------------------------------------------------------
+
+*.tmp
+*.bak
+*.orig
+*.log
