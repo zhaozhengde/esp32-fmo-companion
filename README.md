@@ -401,11 +401,11 @@ pageSize=1
 默认参数：
 
 #define QSO\_COUNT\_FULL\_PAGE\_SIZE       20
-#define QSO\_COUNT\_MAX\_FULL\_SCAN\_PAGES  100
+#define QSO\_COUNT\_MAX\_FULL\_SCAN\_PAGES  500
 
 最多扫描：
 
-20 × 100 = 2000 条记录
+20 × 500 = 10000 条记录
 
 
 
